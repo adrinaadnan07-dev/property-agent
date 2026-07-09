@@ -1,0 +1,15 @@
+[php]
+extensions = ["pdo", "pdo_sqlite", "sqlite3", "mbstring", "xml", "curl", "gd", "bcmath", "json", "openssl", "tokenizer", "fileinfo"]
+
+[phpexec]
+extensions = ["pdo", "pdo_sqlite", "sqlite3", "mbstring", "xml", "curl", "gd", "bcmath", "json", "openssl", "tokenizer", "fileinfo"]
+
+[deploy]
+startCmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
+
+[postbuild]
+phases.run = [
+    "php artisan key:generate --force",
+    "php artisan migrate --force",
+    "php artisan db:seed --force"
+]
