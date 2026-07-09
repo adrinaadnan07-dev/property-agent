@@ -4,14 +4,12 @@ RUN apt-get update && apt-get install -y git unzip libsqlite3-dev curl \
     && docker-php-ext-install pdo pdo_sqlite bcmath \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 COPY . .
 
-RUN composer install --no-dev --optimize-autoloader --no-interaction
-RUN php artisan key:generate --force
-RUN php artisan storage:link --force
+RUN cp .env.example .env && composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs && php artisan key:generate --force
 
 EXPOSE 8000
 
