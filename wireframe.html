@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Wireframe - FZ PROPERTY ADVISORY</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f0f2f5;
+            padding: 40px;
+            color: #1a1a2e;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .flow-arrow {
+            text-align: center;
+            font-size: 2rem;
+            color: #1a73e8;
+            padding: 10px 0;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            padding: 10px 20px;
+            background: #1a73e8;
+            color: white;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .wireframe-group {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .wf {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            border: 2px dashed #ccc;
+            padding: 20px;
+            min-width: 300px;
+            flex: 1;
+            max-width: 500px;
+        }
+        .wf-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            color: #1a73e8;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .wf-title .url {
+            font-weight: 400;
+            font-size: 0.75rem;
+            color: #999;
+            margin-left: auto;
+        }
+        .wf-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .block {
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 0.85rem;
+            background: #fafbfc;
+        }
+        .block.highlight {
+            border-color: #1a73e8;
+            background: #e8f0fe;
+        }
+        .block.whatsapp {
+            border-color: #25d366;
+            background: #e6f9ee;
+        }
+        .block.warning {
+            border-color: #f59e0b;
+            background: #fff8e6;
+        }
+        .block-header {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+            color: #333;
+        }
+        .flex-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .flex-row .block {
+            flex: 1;
+            min-width: 120px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        .badge-blue { background: #dbeafe; color: #1e40af; }
+        .badge-green { background: #d1fae5; color: #065f46; }
+        .badge-yellow { background: #fef3c7; color: #92400e; }
+        .badge-red { background: #fee2e2; color: #991b1b; }
+        .badge-purple { background: #ede9fe; color: #5b21b6; }
+        .label {
+            font-size: 0.7rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        hr { margin: 30px 0; border: none; border-top: 2px solid #e2e8f0; }
+        .note {
+            background: #fff8e6;
+            border-left: 4px solid #f59e0b;
+            padding: 12px 16px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin: 10px 0;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body>
+
+<h1>FZ PROPERTY ADVISORY</h1>
+<p class="subtitle">Website Wireframe — Struktur Laman &amp; Flow Pengguna</p>
+
+<!-- ===== PUBLIC SITE ===== -->
+<span class="section-title"> PUBLIC SITE — Pengunjung</span>
+<div class="wireframe-group">
+    <!-- HOME -->
+    <div class="wf">
+        <div class="wf-title">
+            🏠 Homepage <span class="url">/</span>
+        </div>
+        <div class="wf-content">
+            <div class="block highlight">
+                <div class="block-header">📍 Navbar (sticky)</div>
+                Logo FZPA | Utama | Projek Baru | Rumah Landed | Tentang | Hubungi | [WhatsApp]
+            </div>
+            <div class="block highlight">
+                <div class="block-header">🎯 Hero Section</div>
+                Headline besar + subheadline + 2 CTA buttons (WhatsApp / Projek Baru)
+            </div>
+            <div class="block">
+                <div class="block-header">⭐ Featured Projects (3-6)</div>
+                Kad projek: gambar, tajuk, lokasi, harga, specs, WhatsApp button
+            </div>
+            <div class="block">
+                <div class="block-header">✅ Features / Kenapa Pilih Kami</div>
+                3-4 feature cards: Free Loan Check, Booking-to-Key, Advice Pertama, Negotiation
+            </div>
+            <div class="block">
+                <div class="block-header">📊 Kalkulator Kelayakan</div>
+                Form submit → Result breakdown + Lead form
+            </div>
+            <div class="block">
+                <div class="block-header">💬 CTA Section</div>
+                "Sedia miliki rumah impian?" → WhatsApp button
+            </div>
+            <div class="block highlight">
+                <div class="block-header">🔻 Footer</div>
+                Company name + tagline | Social media | Pautan | Contact info
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT LISTINGS -->
+    <div class="wf">
+        <div class="wf-title">
+            🏘 Projek Listings <span class="url">/new-projects | /landed-properties</span>
+        </div>
+        <div class="wf-content">
+            <div class="block highlight">Navbar (sama)</div>
+            <div class="block highlight">
+                <div class="block-header">📋 Page Banner</div>
+                Tajuk + penerangan ringkas
+            </div>
+            <div class="block">
+                <div class="block-header">📄 Project Grid (pagination 12/page)</div>
+                Kad: gambar, tajuk, lokasi, harga, specs, [WhatsApp] [Detail]
+            </div>
+            <div class="block highlight">
+                <div class="block-header">📊 Calculator Section</div>
+                Same calculator component (inline)
+            </div>
+            <div class="block highlight">Footer</div>
+        </div>
+    </div>
+
+    <!-- PROJECT DETAIL -->
+    <div class="wf">
+        <div class="wf-title">
+            📄 Project Detail <span class="url">/project/{slug}</span>
+        </div>
+        <div class="wf-content">
+            <div class="block highlight">Navbar</div>
+            <div class="block highlight back">← Kembali</div>
+            <div class="flex-row">
+                <div class="block" style="flex:2">
+                    <div class="block-header">🖼 Gallery / Image</div>
+                    Gambar utama + description
+                </div>
+                <div class="block" style="flex:1">
+                    <div class="block-header">📋 Sidebar</div>
+                    Harga | Specs | Agent Info | [WhatsApp] [Share]
+                </div>
+            </div>
+            <div class="block">
+                <div class="block-header">📝 Features List</div>
+                Ciri-ciri project
+            </div>
+            <div class="block highlight">
+                <div class="block-header">📊 Calculator (inline)</div>
+            </div>
+            <div class="block highlight">Footer</div>
+        </div>
+    </div>
+
+    <!-- ABOUT + CONTACT -->
+    <div class="wf">
+        <div class="wf-title">
+            ℹ️ About &amp; Contact <span class="url">/about | /contact</span>
+        </div>
+        <div class="flex-row">
+            <div class="block" style="flex:1">
+                <div class="block-header">📖 About Page</div>
+                Banner → Story section → Stats → Services grid
+            </div>
+            <div class="block" style="flex:1">
+                <div class="block-header">📞 Contact Page</div>
+                Banner → Contact info (WA, email, agent) → Inquiry form
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== CALCULATOR FLOW ===== -->
+<span class="section-title"> KALKULATOR — Flow Lengkap</span>
+<div class="wireframe-group">
+    <div class="wf" style="max-width: 600px;">
+        <div class="wf-title">📊 Calculator Component</div>
+        <div class="wf-content">
+            <div class="block highlight">
+                <div class="block-header">Step 1: Input Form</div>
+                <div class="flex-row">
+                    <div class="block"><b>🏠 Maklumat Rumah</b><br>Harga | Deposit | Margin (90/95/100%)</div>
+                    <div class="block"><b>👤 Maklumat Pemohon</b><br>Umur | Pekerjaan (Kerajaan/Swasta/Self-employed/Business)</div>
+                    <div class="block"><b>💰 Kewangan</b><br>Gaji Kasar | Gaji Bersih | Komitmen (Kereta/PTPTN/Personal/Credit Card)</div>
+                </div>
+                <div style="margin-top:8px;text-align:center;font-weight:600;color:#1a73e8;">[ Semak Kelayakan ]</div>
+            </div>
+
+            <div class="block highlight">
+                <div class="block-header">Step 2: Result Breakdown</div>
+                <div class="flex-row">
+                    <div class="block">
+                        <b>Pendapatan &amp; Komitmen</b><br>
+                        Pendapatan Bersih: RM x<br>
+                        Komitmen Sedia Ada: RM x<br>
+                        Ansuran Rumah Baru: RM x<br>
+                        <b>Jumlah Komitmen: RM x</b>
+                    </div>
+                    <div class="block">
+                        <b>Analisis Kelayakan</b><br>
+                        Harga Rumah: RM x<br>
+                        Jumlah Pinjaman: RM x<br>
+                        Tempoh: 35 tahun
+                    </div>
+                </div>
+                <div class="block" style="margin-top:8px;border-color:#1a73e8;">
+                    <b>📊 DSR Meter</b> — Bar visual hijau/kuning/merah<br>
+                    <b>✅ Status:</b> Sangat Berpotensi / ⚠️ Masih Boleh Dipertimbangkan / 🔴 Perlu Semakan Lanjut
+                </div>
+                <div class="block">
+                    <b>📊 Perbandingan Harga</b> — RM250k / RM300k / RM350k / RM400k / RM500k
+                </div>
+            </div>
+
+            <div class="block whatsapp">
+                <div class="block-header">Step 3: Lead Form (dalam result)</div>
+                ✅ Nama | No Telefon | Budget Rumah | Lokasi Pilihan<br>
+                <b>[ Hubungi Saya — Terus WhatsApp ]</b>
+            </div>
+
+            <div class="block warning">
+                <div class="block-header">⚠️ Disclaimer</div>
+                Anggaran awal — kelulusan sebenar tertakluk penilaian bank
+            </div>
+
+            <div class="block">
+                <div class="block-header">🏆 Kenapa Guna FZPA?</div>
+                4 benefits + [WhatsApp button]
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== ADMIN PANEL ===== -->
+<span class="section-title"> ADMIN PANEL — Pengurusan</span>
+<div class="wireframe-group">
+    <div class="wf">
+        <div class="wf-title">
+            📊 Dashboard <span class="url">/admin</span>
+        </div>
+        <div class="wf-content">
+            <div class="flex-row">
+                <div class="block">Jumlah Projek<br><b>7</b></div>
+                <div class="block">Aktif<br><b>7</b></div>
+                <div class="block">Jumlah Inquiry<br><b>10</b></div>
+                <div class="block">Baru<br><b>3</b></div>
+                <div class="block">Layak<br><b>5</b></div>
+            </div>
+            <div class="block" style="margin-top:8px;">
+                <b>🔘 Quick Actions:</b> [Urus Projek] [Tambah Projek] [Lihat Inquiry]
+            </div>
+            <div class="block">
+                <b>📋 Inquiry Terkini (5 terkini)</b><br>
+                Nama | Telefon | Projek | Status | Tarikh
+            </div>
+        </div>
+    </div>
+
+    <div class="wf">
+        <div class="wf-title">
+            📋 Senarai Inquiry <span class="url">/admin/inquiries</span>
+        </div>
+        <div class="wf-content">
+            <div class="block" style="font-size:0.8rem;">
+                <b>Tabel — 10 kolum:</b><br>
+                Nama | Telefon | Projek | Gaji | Budget | Lokasi | Jenis | Status | Tarikh | Tindakan 👁🗑
+            </div>
+            <div class="block highlight" style="background:#e8f0fe;">
+                <b>Click nama → Detail page</b>
+            </div>
+        </div>
+    </div>
+
+    <div class="wf">
+        <div class="wf-title">
+            📄 Detail Inquiry <span class="url">/admin/inquiries/{id}</span>
+        </div>
+        <div class="wf-content">
+            <div class="flex-row">
+                <div class="block">Nama: xxx</div>
+                <div class="block">Telefon: xxx</div>
+            </div>
+            <div class="flex-row">
+                <div class="block">Email: xxx</div>
+                <div class="block">Projek: xxx</div>
+            </div>
+            <div class="flex-row">
+                <div class="block">Gaji: RMxxx</div>
+                <div class="block">Budget: RMxxx</div>
+            </div>
+            <div class="flex-row">
+                <div class="block">Lokasi: xxx</div>
+                <div class="block">Jenis: calculator_lead</div>
+            </div>
+            <div class="block whatsapp">
+                <b>💬 [WhatsApp client]</b> — pre-composed message
+            </div>
+            <div class="block highlight">
+                <b>✏️ Update Status:</b><br>
+                [New ▼] — Notes textarea — [Kemaskini]
+            </div>
+        </div>
+    </div>
+
+    <div class="wf">
+        <div class="wf-title">
+            🏗 Urus Projek <span class="url">/admin/projects</span>
+        </div>
+        <div class="wf-content">
+            <div class="block">
+                [+ Tambah Projek Baru]
+            </div>
+            <div class="block" style="font-size:0.8rem;">
+                <b>Tabel — 7 kolum:</b><br>
+                Tajuk | Jenis | Harga | Lokasi | Featured | Status | Tindakan ✏🗑
+            </div>
+        </div>
+    </div>
+
+    <div class="wf">
+        <div class="wf-title">
+            ✏️ Tambah/Edit Projek <span class="url">/admin/projects/create | /edit</span>
+        </div>
+        <div class="wf-content">
+            <div class="flex-row">
+                <div class="block">Tajuk</div>
+                <div class="block">Jenis ▼</div>
+                <div class="block">Harga</div>
+            </div>
+            <div class="flex-row">
+                <div class="block">Lokasi</div>
+                <div class="block">Pemaju</div>
+                <div class="block">Keluasan</div>
+            </div>
+            <div class="flex-row">
+                <div class="block">Bilik Tidur</div>
+                <div class="block">Bilik Air</div>
+                <div class="block">Tenure</div>
+            </div>
+            <div class="block">Penerangan (textarea)</div>
+            <div class="block">Ciri-ciri (textarea — 1 per line)</div>
+            <div class="block">Links: WhatsApp Group | Telegram | Registration</div>
+            <div class="block">☑ Featured | ☑ Active</div>
+            <div class="block highlight" style="text-align:center;font-weight:600;">[ Simpan Projek ]</div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== USER FLOW ===== -->
+<span class="section-title"> USER FLOW — Pengunjung → Client</span>
+<div style="display:flex;gap:12px;flex-wrap:wrap;max-width:900px;margin:0 auto;">
+    <div class="block" style="flex:1;text-align:center;border-color:#1a73e8;">
+        🏠 Land from Google / Social Media
+    </div>
+    <div style="font-size:2rem;color:#1a73e8;padding:5px;">→</div>
+    <div class="block" style="flex:1;text-align:center;border-color:#1a73e8;">
+        👀 Browse Projects
+    </div>
+    <div style="font-size:2rem;color:#1a73e8;padding:5px;">→</div>
+    <div class="block" style="flex:1;text-align:center;border-color:#1a73e8;">
+        📊 Check Calculator
+    </div>
+    <div style="font-size:2rem;color:#1a73e8;padding:5px;">→</div>
+    <div class="block whatsapp" style="flex:1;text-align:center;">
+        💬 Fill Lead Form → WhatsApp
+    </div>
+</div>
+
+<div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap;max-width:900px;margin:12px auto 0;">
+    <div class="block" style="flex:1;text-align:center;">
+        🔄 Admin terima lead → Update status
+    </div>
+    <div style="font-size:2rem;color:#1a73e8;padding:5px;">→</div>
+    <div class="block" style="flex:1;text-align:center;">
+        📞 Contact client → Set appointment
+    </div>
+    <div style="font-size:2rem;color:#1a73e8;padding:5px;">→</div>
+    <div class="block" style="flex:1;text-align:center;border-color:#10b981;">
+        ✅ Closed (sale / done)
+    </div>
+</div>
+
+<!-- ===== TECH STACK ===== -->
+<span class="section-title"> TECH STACK</span>
+<div class="wireframe-group">
+    <div class="wf" style="max-width: 600px;">
+        <div class="wf-content">
+            <div class="flex-row">
+                <div class="block"><b>Backend</b><br>Laravel 11 (PHP 8.2)</div>
+                <div class="block"><b>Database</b><br>SQLite</div>
+                <div class="block"><b>Frontend</b><br>Blade + CSS + JS</div>
+                <div class="block"><b>Icons</b><br>Font Awesome 6</div>
+            </div>
+            <div class="flex-row">
+                <div class="block"><b>Jumlah Pages</b><br>6 public + 6 admin</div>
+                <div class="block"><b>Models</b><br>Project + Inquiry</div>
+                <div class="block"><b>Auth</b><br>❌ Tiada</div>
+                <div class="block"><b>Deploy</b><br>Laravel server</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p style="text-align:center;margin-top:40px;color:#999;font-size:0.85rem;">
+    Wireframe — FZ PROPERTY ADVISORY &bull; Generated July 2026
+</p>
+
+</body>
+</html>
